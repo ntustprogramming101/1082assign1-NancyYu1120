@@ -21,6 +21,7 @@ void setup() {
   bgImg = loadImage("img/bg.jpg");
   soilImg = loadImage("img/soil.png");
   lifeImg = loadImage("img/life.png");
+  groundhogImg = loadImage("img/groundhog.png");
   soldierImg = loadImage("img/soldier.png");
   robotImg = loadImage("img/robot.png");
 }
@@ -53,6 +54,9 @@ void draw() {
   rectMode(CORNERS);
   rect(0, 145, 640, 160);
 
+  //groundhog
+  image(groundhogImg, width/2-45, 80);
+  
   //soldier
   image(soldierImg, soldierX, 160+soldierRandomY*soilBlock);
   soldierX = soldierX+1;
